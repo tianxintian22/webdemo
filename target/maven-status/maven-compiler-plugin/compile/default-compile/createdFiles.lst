@@ -1,1 +1,6 @@
+com\test\webdemo\service\impl\UserServiceImpl.class
+com\test\webdemo\model\Users.class
+com\test\webdemo\model\DBUtil.class
+com\test\webdemo\service\UserService.class
+com\test\webdemo\controller\UserController.class
 com\test\webdemo\controller\HelloMvcController.class
