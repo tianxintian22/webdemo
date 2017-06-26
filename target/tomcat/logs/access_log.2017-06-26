@@ -1,0 +1,7 @@
+127.0.0.1 - - [26/Jun/2017:22:59:49 +0800] "GET /webdemo/users/view/userlist HTTP/1.1" 200 6056 http-bio-8080-exec-1 2783
+127.0.0.1 - - [26/Jun/2017:22:59:50 +0800] "GET /webdemo/resources/css/all.css HTTP/1.1" 304 - http-bio-8080-exec-5 472
+127.0.0.1 - - [26/Jun/2017:22:59:51 +0800] "GET /webdemo/resources/images/page.gif HTTP/1.1" 304 - http-bio-8080-exec-7 45
+127.0.0.1 - - [26/Jun/2017:22:59:51 +0800] "GET /webdemo/resources/images/page_be.gif HTTP/1.1" 304 - http-bio-8080-exec-6 89
+127.0.0.1 - - [26/Jun/2017:22:59:51 +0800] "GET /webdemo/resources/images/btn03.gif HTTP/1.1" 304 - http-bio-8080-exec-8 31
+127.0.0.1 - - [26/Jun/2017:22:59:51 +0800] "GET /webdemo/resources/images/btn06.gif HTTP/1.1" 304 - http-bio-8080-exec-9 37
+127.0.0.1 - - [26/Jun/2017:22:59:51 +0800] "GET /webdemo/resources/images/icon.png HTTP/1.1" 304 - http-bio-8080-exec-10 40

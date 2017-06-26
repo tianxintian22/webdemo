@@ -1,5 +1,0 @@
-127.0.0.1 - - [25/Jun/2017:21:38:52 +0800] "GET /webdemo/users/view?userId=1 HTTP/1.1" 200 332 http-bio-8080-exec-1 2323
-127.0.0.1 - - [25/Jun/2017:21:39:45 +0800] "GET /webdemo/users/view?userId=1 HTTP/1.1" 200 314 http-bio-8080-exec-3 212
-127.0.0.1 - - [25/Jun/2017:21:46:12 +0800] "GET /webdemo/users/view?userId=1 HTTP/1.1" 500 8422 http-bio-8080-exec-5 879
-127.0.0.1 - - [25/Jun/2017:21:47:57 +0800] "GET /webdemo/users/view?userId=1 HTTP/1.1" 500 8410 http-bio-8080-exec-6 226
-127.0.0.1 - - [25/Jun/2017:21:48:12 +0800] "GET /webdemo/users/view?userId=1 HTTP/1.1" 200 347 http-bio-8080-exec-7 158

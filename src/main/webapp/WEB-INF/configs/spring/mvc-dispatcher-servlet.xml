@@ -25,7 +25,7 @@
     <mvc:annotation-driven/>
     
     <!-- 静态资源配置，css、js、imgs -->
-    <mvc:resources location="/resources/**" mapping="/resources/"></mvc:resources>
+    <mvc:resources mapping="/resources/**" location="/resources/" />
     
     <!-- 配置ViewResolver -->
     <!-- 可以用多个ViewResolver，使用order进行排序，InternalResourceViewResolver放在最后 -->
