@@ -1,5 +1,6 @@
 package com.test.webdemo.controller;
 
+import java.util.Date;
 import java.util.List;
 import java.util.Map;
 
@@ -50,6 +51,27 @@ public class UserController {
 		log.debug("In viewUser, query");
 		List<Users> users = userService.query();
 		model.put("userList", users);
+		return "user_view";
+	}
+	
+	@RequestMapping(value="/admin", method=RequestMethod.GET, params="add")
+	public String viewUserAdd() {
+		return "userAdd";
+	}
+	@RequestMapping(value="/save", method=RequestMethod.POST)
+	public String doSave(Users user) {
+		user.setCreate_user("admin");
+		user.setUpdate_user("admin");
+		user.setBirthday(new Date());
+		user.setIsdel(0);
+		userService.addUser(user);
+		return "redirect:view/userlist";
+	}
+	@RequestMapping(value="/view/search", method=RequestMethod.POST)
+	public String doSave(String user_name, Map<String, Object> model) {
+		List<Users> user = userService.query(user_name);
+		model.put("userList", user);
+		model.put("user_name", user_name);
 		return "user_view";
 	}
 

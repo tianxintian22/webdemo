@@ -1,0 +1,5 @@
+127.0.0.1 - - [27/Jun/2017:23:31:48 +0800] "GET /webdemo/users/view/userlist HTTP/1.1" 200 8892 http-bio-8080-exec-1 1822
+127.0.0.1 - - [27/Jun/2017:23:31:52 +0800] "POST /webdemo/users/view/search HTTP/1.1" 200 8064 http-bio-8080-exec-3 86
+127.0.0.1 - - [27/Jun/2017:23:31:54 +0800] "GET /webdemo/users/admin?add HTTP/1.1" 200 2980 http-bio-8080-exec-4 191
+127.0.0.1 - - [27/Jun/2017:23:32:39 +0800] "POST /webdemo/users/save HTTP/1.1" 302 - http-bio-8080-exec-6 1240
+127.0.0.1 - - [27/Jun/2017:23:32:39 +0800] "GET /webdemo/users/view/userlist HTTP/1.1" 200 9696 http-bio-8080-exec-7 22
