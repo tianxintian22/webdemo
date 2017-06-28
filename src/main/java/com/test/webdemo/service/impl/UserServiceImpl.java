@@ -52,7 +52,7 @@ public class UserServiceImpl implements UserService {
 			ptmt.setString(1, u.getUser_name());
 			ptmt.setInt(2, u.getSex());
 			ptmt.setInt(3, u.getAge());
-			ptmt.setDate(4, new Date(u.getCreate_date().getTime()));
+			ptmt.setDate(4, new Date(u.getBirthday().getTime()));
 			ptmt.setString(5, u.getEmail());
 			ptmt.setString(6, u.getMobile());
 			ptmt.setString(7, u.getUpdate_user());

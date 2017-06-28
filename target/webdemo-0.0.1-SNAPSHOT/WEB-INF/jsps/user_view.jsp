@@ -55,8 +55,8 @@ ${username}
 	                                    <td>${user.email}</td>
 	                                    <td>${user.birthday}</td>
 	                                    <td>
-	                                        <a href="#">修改</a>&nbsp;&nbsp;&nbsp;
-	                                        <a href="#">删除</a>
+	                                        <a href="<%=request.getContextPath()%>/users/admin/${user.id}?edit">修改</a>&nbsp;&nbsp;&nbsp;
+	                                        <a href="<%=request.getContextPath()%>/users/admin/del?userId=${user.id}">删除</a>
 	                                    </td>
 	                                </tr>
                                 </c:forEach>

@@ -18,37 +18,38 @@
                             <tr>
                                 <td width="90" align="right">姓名：</td>
                                 <td>
-                                    <input type="text" class="allInput" name="user_name" value=""/>
+                                    <input type="text" class="allInput" name="user_name" value="${user.user_name}"/>
                                 </td>
                                 
                             </tr>
                             <tr>
                                 <td width="90" align="right">年龄：</td>
                                 <td>
-                                    <input type="text" class="allInput" name="age" value=""/>
+                                    <input type="text" class="allInput" name="age" value="${user.age}"/>
                                 </td>
                             </tr>
                             <tr>
                                 <td width="90" align="right">性别：</td>
                                 <td>
-                                    <input type="text" class="allInput" name="sex" value=""/>
+                                    <input type="text" class="allInput" name="sex" value="${user.sex}"/>
                                 </td>
                             </tr>
                             <tr>
                                 <td width="90" align="right">联系方式：</td>
                                 <td>
-                                    <input type="text" class="allInput" name="mobile" value=""/>
+                                    <input type="text" class="allInput" name="mobile" value="${user.mobile}"/>
                                 </td>
                             </tr>
                             <tr>
                                 <td width="90" align="right">邮箱：</td>
                                 <td>
-                                    <input type="text" class="allInput" name="email" value=""/>
+                                    <input type="text" class="allInput" name="email" value="${user.email}"/>
                                 </td>
                             </tr>
                             <tr>
                                 <td width="90" align="right"></td>
                                 <td>
+                                    <input type="hidden" name="id" value="${user.id }">
                                     <input type="submit" id="btnPass"  value="提交" />
                                 </td>
                             </tr>

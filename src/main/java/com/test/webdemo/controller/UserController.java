@@ -60,11 +60,17 @@ public class UserController {
 	}
 	@RequestMapping(value="/save", method=RequestMethod.POST)
 	public String doSave(Users user) {
-		user.setCreate_user("admin");
-		user.setUpdate_user("admin");
 		user.setBirthday(new Date());
 		user.setIsdel(0);
-		userService.addUser(user);
+		if (user.getId() != null) {
+			user.setUpdate_user("super");
+			userService.updateUser(user);
+		} else {
+			user.setCreate_user("admin");
+			user.setUpdate_user("admin");
+			userService.addUser(user);
+		}
+		
 		return "redirect:view/userlist";
 	}
 	@RequestMapping(value="/view/search", method=RequestMethod.POST)
@@ -74,7 +80,17 @@ public class UserController {
 		model.put("user_name", user_name);
 		return "user_view";
 	}
-
+	@RequestMapping(value="/admin/del", method=RequestMethod.GET)
+	public String viewUserDel(@RequestParam("userId") Integer userId, Map<String, Object> model) {
+		userService.delUser(userId);
+		return "redirect:../view/userlist";	
+	}
+	@RequestMapping(value="/admin/{userId}", method=RequestMethod.GET, params="edit")
+	public String viewUserEdit(@PathVariable("userId") Integer userId, Map<String, Object> model) {
+		Users user = userService.getUser(userId);
+		model.put("user", user);
+		return "userAdd";
+	}
 	
 	
 }
